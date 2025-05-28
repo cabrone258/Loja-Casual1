@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Loja Casual</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    header {
+      background-color: #2e8b57;
+      color: white;
+      padding: 20px;
+    }
+
+    .produtos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .produto {
+      background-color: white;
+      border-radius: 10px;
+      width: 280px;
+      padding: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .produto img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .botao-comprar {
+      background-color: #2e8b57;
+      color: white;
+      padding: 10px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .botao-comprar:hover {
+      background-color: #246e46;
+    }
+
+    footer {
+      background-color: #2e8b57;
+      color: white;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Loja Casual</h1>
+    <p>Roupas e sapatos simples para o dia a dia</p>
+  </header>
+
+  <div class="produtos">
+
+    <!-- Sapato 1 -->
+    <div class="produto">
+      <img src="https://i.imgur.com/LXHlUk3.jpg" alt="Sapato de Lona">
+      <h3>Sapato de Lona</h3>
+      <p>Preço: 850 MZN</p>
+      <button class="botao-comprar" onclick="comprar()">Comprar</button>
+    </div>
+
+    <!-- Sapato 2 -->
+    <div class="produto">
+      <img src="https://i.imgur.com/BReGiFO.jpg" alt="Ténis Simples Cinza">
+      <h3>Ténis Simples Cinza</h3>
+      <p>Preço: 980 MZN</p>
+      <button class="botao-comprar" onclick="comprar()">Comprar</button>
+    </div>
+
+    <!-- Camisa 1 -->
+    <div class="produto">
+      <img src="https://i.imgur.com/vGrUDBj.jpg" alt="Camisa Branca Casual">
+      <h3>Camisa Branca Casual</h3>
+      <p>Preço: 720 MZN</p>
+      <button class="botao-comprar" onclick="comprar()">Comprar</button>
+    </div>
+
+    <!-- Camisa 2 -->
+    <div class="produto">
+      <img src="https://i.imgur.com/XNwRWfs.jpg" alt="Camisa Azul Leve">
+      <h3>Camisa Azul Leve</h3>
+      <p>Preço: 790 MZN</p>
+      <button class="botao-comprar" onclick="comprar()">Comprar</button>
+    </div>
+
+    <!-- Calça 1 -->
+    <div class="produto">
+      <img src="https://i.imgur.com/ysI5Xfy.jpg" alt="Calça Jeans Clara">
+      <h3>Calça Jeans Clara</h3>
+      <p>Preço: 1,100 MZN</p>
+      <button class="botao-comprar" onclick="comprar()">Comprar</button>
+    </div>
+
+    <!-- Calça 2 -->
+    <div class="produto">
+      <img src="https://i.imgur.com/6U5gbAZ.jpg" alt="Calça Preta Casual">
+      <h3>Calça Preta Casual</h3>
+      <p>Preço: 950 MZN</p>
+      <button class="botao-comprar" onclick="comprar()">Comprar</button>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Loja Casual. Todos os direitos reservados.
+  </footer>
+
+  <script>
+    function comprar() {
+      alert("Produto adicionado ao carrinho!");
+    }
+  </script>
+
+</body>
+</html>
